@@ -1,5 +1,61 @@
+header{
+  padding: 10px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border-bottom: 1px solid #666666;
+  -webkit-box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.4);
+}
+.row{
+  width: 100%;
+}
+#espacoLogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#espacoLogo img{
+  max-width: 100%;
+  width: 150px;
+  height: auto;
+}
+#searchBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+#language{
+  flex: 2;
+}
+.search{
+  flex: 1;
+  margin: 10px;
+}
+
+#espacoDescricao{
+    display: block;
+    margin-top: 8%;
+    text-align: center;
+    color: #666666;
+}
+
+#espacoRepositorios{
+    display: none;
+}
+
 #espacoRepositorios table tbody tr td img{
- max-width: 100%;
- width: 100px;
- height: auto;
+max-width: 100%;
+width: 100px;
+height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  #espacoDescricao{
+    margin-top: 33%;
+  }
+
 }

@@ -19,6 +19,11 @@ public class EventoService implements IEventoService {
     }
 
     @Override
+    public List<Evento> findByLanguageContaining(String language) {
+        return (List<Evento>) repository.findByLanguageContaining(language);
+    }
+
+    @Override
     public void save(Evento evento) {
         repository.save(evento);
     }

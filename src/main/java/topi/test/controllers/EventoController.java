@@ -16,28 +16,24 @@ public class EventoController {
     @Autowired
     private IEventoService eventoService;
 
-    @RequestMapping("/buscar")
+    @RequestMapping("/buscar/{language}")
     @ResponseBody
-    public List<Evento>   findEventos() {
-        return eventoService.findAll();
+    public List<Evento>   findEventos(@PathVariable("language") String language) {
+        return eventoService.findByLanguageContaining(language);
     }
 
     @RequestMapping("/salvar/{codigo}")
     @ResponseBody
     public void save(Evento evento, @PathVariable("codigo") int codigo){
 
-        String avatar = evento.getAvatar();
-        String name = evento.getName();
-        int stars = evento.getStars();
-        int forks = evento.getForks();
-
         Evento event = new Evento();
-        event.setAvatar(avatar);
+        event.setAvatar(evento.getAvatar());
         event.setCodigo(codigo);
-        event.setName(name);
-        event.setForks(forks);
-        event.setStars(stars);
-
+        event.setName(evento.getName());
+        event.setForks(evento.getForks());
+        event.setStars(evento.getStars());
+        event.setLanguage(evento.getLanguage());
+        event.setUrlRepository(evento.getUrlRepository());
         eventoService.save(event);
     }
 }

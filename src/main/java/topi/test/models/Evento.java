@@ -15,6 +15,8 @@ public class Evento {
     private String name;
     private int stars;
     private int forks;
+    private String language;
+    private String urlRepository;
 
     public int getCodigo() {
         return codigo;
@@ -51,5 +53,18 @@ public class Evento {
         this.forks = forks;
     }
 
+    public String getLanguage() {
+        return language;
+    }
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    public String getUrlRepository() {
+        return urlRepository;
+    }
+    public void setUrlRepository(String urlRepository) {
+        this.urlRepository = urlRepository;
+    }
 
 }

@@ -8,6 +8,8 @@ import java.util.Optional;
 public interface IEventoService {
     List<Evento> findAll();
 
+    List<Evento> findByLanguageContaining(String language);
+
     void save(Evento evento);
 
     Optional<Evento> findById(int codigo);

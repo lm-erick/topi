@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 
 <html lang="pt-BR">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="jquery.min.js"></script>
-    <script>
-        var URL_JS = 'http://localhost:8080/';
-
-    </script>
-    <script src="funcoesGerais.js"></script>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-          integrity="   sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-          crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="  sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"></script>
-    <title>Test Topi</title>
-</head>
-<body class="nav-md">
-<div class="container" id="espacoRepositorios">
-    <table class="table table-striped">
-        <thea>
-            <tr>
-                <td>Avatar</td>
-                <td>Nome</td>
-                <td>Stars</td>
-                <td>Forks</td>
-            </tr>
-            </thead>
-            <tbody id="recebendoRepositorios">
-
-            </tbody>
-    </table>
-</div>
-</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="jquery.min.js"></script>
+        <script>
+            var URL_JS = 'http://localhost:8080';
+        </script>
+        <script src="funcoesGerais.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+              integrity="   sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+              crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+                integrity="  sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+                crossorigin="anonymous"></script>
+        <title>Test Topi</title>
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div id="espacoLogo" class="col-md-2">
+                    <img src="https://topi.io/wp-content/uploads/2018/06/cropped-01-topi-logo-preferencial-preta-2.png">
+                </div>
+                <div id="searchBar" class="col-md-10">
+                    <input type="text" class="form-control" id="language" name="language" placeholder="Search Language">
+                    <input type="submit" value="Search" class="search btn btn-primary">
+                </div>
+            </div>
+        </header>
+        <div id="espacoDescricao">
+            <h1>Search the repository wanted</h1>
+        </div>
+        <div class="container" id="espacoRepositorios">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <td>Avatar</td>
+                    <td>Nome</td>
+                    <td>Stars</td>
+                    <td>Forks</td>
+                </tr>
+                </thead>
+                <tbody id="recebendoRepositorios">
+                </tbody>
+            </table>
+        </div>
+    </body>
 </html>
