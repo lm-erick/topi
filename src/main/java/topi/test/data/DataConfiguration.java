@@ -18,9 +18,9 @@ public class DataConfiguration {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://35.238.226.130:3306/topi");
-        dataSource.setUsername("topi");
-        dataSource.setPassword("erick1196");
+        dataSource.setUrl("jdbc:mysql://us-cdbr-east-02.cleardb.com/heroku_307ff31d140af24");
+        dataSource.setUsername("b09700f01311e9");
+        dataSource.setPassword("1a4e8bc4");
 
         return dataSource;
     }
