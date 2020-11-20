@@ -21,6 +21,7 @@ public class DataConfiguration {
         dataSource.setUrl("jdbc:mysql://35.238.226.130:3306/topi");
         dataSource.setUsername("topi");
         dataSource.setPassword("erick1196");
+        
         return dataSource;
     }
 
